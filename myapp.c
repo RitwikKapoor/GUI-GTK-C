@@ -20,6 +20,7 @@ void button_clicked(GtkWidget *widget, gpointer user_data) {
 
    if(strlen(text) > 0) {
 	GtkWidget *label = gtk_label_new(text);
+	gtk_label_set_xalign(GTK_LABEL(label), 0.01);
 	gtk_box_pack_start(GTK_BOX(boxl), label, FALSE, FALSE, 0);
 	gtk_widget_show(label);	
     	gtk_entry_set_text(GTK_ENTRY(entry), "");
@@ -89,7 +90,7 @@ int main(int argc, char *argv[]) {
     //Set text in input widget
     gtk_entry_set_text(GTK_ENTRY(inputText), "Enter your message...");
     	
-
+    //Add names to widgets for CSS	
     gtk_widget_set_name (grid, "my-grid");
     gtk_widget_set_name(scroll, "my-scroll");
     gtk_widget_set_name(btn, "my-btn");
