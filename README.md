@@ -27,3 +27,7 @@ To delete the executable file, run
 ```
 make clean
 ```
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/89243656/225554304-60e5095d-086c-48a5-8540-6e25e5422380.png)
